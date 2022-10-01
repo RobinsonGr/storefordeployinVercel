@@ -1,0 +1,116 @@
+@import "./variables.module.scss";
+
+
+
+.Nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 7px;
+  border-bottom: 1px solid $very-light-pink;
+  top: 0;
+  position: sticky;
+  z-index: 1;
+  background-color: white;
+  
+
+}
+
+
+.iconMenu {
+  display: none !important;
+  cursor: pointer;
+  
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-left img {
+  min-width: 100px !important;
+}
+
+.navbar-right ul, .navbar-left ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-left {
+  display: flex;
+}
+
+.navbar-left ul {
+  margin-left: 12px;
+}
+
+
+
+.navbar-right ul li a, .navbar-left ul li a {
+  text-decoration: none;
+  color: $very-light-pink;
+  border: 1px solid $white;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.navbar-left ul li a:hover, .navbar-right ul li a:hover  {
+  color: $hospital-green;
+  border: 1px solid $hospital-green;
+}
+
+.navbar-right ul li:first-child {
+  color: $very-light-pink;
+  font-size: $sm;
+  margin-right: 12px;
+  cursor: pointer;
+
+}
+
+.shopping-car {
+  position: relative;
+  cursor: pointer;
+}
+
+.shopping-car > div {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  top: -6px;
+  right: -6px;
+  background-color: $hospital-green;
+  font-size: 10px;
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+}
+
+.navbar-right img {
+min-width: 24px !important;
+}
+  .nItems {
+  width: 25px;
+}
+
+@media (max-width: 800px) {
+  .iconMenu {
+      display: block !important;
+  }
+
+  .navbar-left ul {
+      display: none;
+  }
+
+  .navbar-right ul li:first-child {
+      display: none;
+
+  }
+}

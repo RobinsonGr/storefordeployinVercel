@@ -1,0 +1,13 @@
+@import "./variables.module.scss";
+
+
+.ProductList {
+    
+    margin-top: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 26px;
+    place-content: center;
+
+}

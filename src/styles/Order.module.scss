@@ -1,0 +1,30 @@
+@import "./variables.module.scss";
+
+.order-container{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+
+}
+
+.order-container p:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.order-container p span:first-child {
+    font-weight: bolder;
+    font-size: $lg;
+}
+
+.order-container p span:last-child {
+    color: $very-light-pink;
+    font-size: $sm;
+}
+
+.order-container p:nth-child(2) {
+    text-align: end;
+    margin: 0 18px 0 0;
+
+}

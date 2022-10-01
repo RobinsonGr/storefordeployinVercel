@@ -1,0 +1,63 @@
+            
+@import "./variables.module.scss";
+
+            .ProductInfo > img {
+                width: 100%;
+                border-radius: 8px;
+              }
+    
+    
+    
+              .ProductInfo button{
+                background-color: $hospital-green;
+                border: none;
+                width: 100%;
+                border-radius: 8px;
+                height: 50px;
+                font-size: $md;
+                color: $text-input-field;
+            }
+    
+            .product-info {
+                margin: 30px;
+            }
+    
+            .product-info p:first-child {
+                font-weight: bold;
+                font-size: $md;
+                margin: 0;
+            }
+    
+            .product-info p:first-child + p {
+                color: $very-light-pink;
+                font-size: $very-light-pink;
+                margin: 2px 0;
+    
+            }
+    
+            .product-description {
+                color: $very-light-pink;
+                font-size: $very-light-pink;
+            }
+    
+           .sliders {
+            display: flex;
+            margin: 9px auto;
+            width: 30px;
+            justify-content: space-between;
+           }
+    
+           .sliders div {
+            width: 8px;
+            border-radius: 50px;
+            height: 8px;
+            background-color: #d3f2d7;
+            
+           }
+    
+           .sliders div:first-child {
+            background-color: $hospital-green;
+            
+           }
+    
+        
