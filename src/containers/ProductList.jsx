@@ -7,7 +7,7 @@ import useGetProducts from "../hooks/useGetProducts.js";
 
 const ProductList = () => {
 
-const product = useGetProducts(process.env.NEXT_PUBLIC_API)
+const product = useGetProducts("https://api.escuelajs.co/api/v1/products?limit=120&offset=1")
 
     return(
 
