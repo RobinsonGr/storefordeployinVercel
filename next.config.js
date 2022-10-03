@@ -9,6 +9,7 @@
     "placeimg.com",
     "paceimg.com",
     "firebasestorage.googleapis.com",
+    "images.pexels.com"
   
   
   ],
