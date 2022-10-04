@@ -9,9 +9,7 @@
     "placeimg.com",
     "paceimg.com",
     "firebasestorage.googleapis.com",
-    "images.pexels.com"
-  
-  
+    "images.pexels.com",  
   ],
     
   }
@@ -32,4 +30,12 @@
 //  
 }
 
-module.exports = nextConfig
+
+const withPWA = require('next-pwa')({
+  dest: 'public',
+  register: true,
+  include: ['production'],
+})
+
+module.exports = withPWA(nextConfig)
+
